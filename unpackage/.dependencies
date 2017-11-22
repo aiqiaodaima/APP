@@ -1,0 +1,30 @@
+{
+  "forget_password.html": {
+    "href": "forget_password.html",
+    "resources": [],
+    "priority": 0
+  },
+  "main.html": {
+    "href": "main.html",
+    "resources": [],
+    "priority": 1
+  },
+  "unlock.html": {
+    "href": "unlock.html",
+    "resources": [],
+    "refer": [],
+    "priority": 2
+  },
+  "reg.html": {
+    "href": "reg.html",
+    "resources": [],
+    "refer": [],
+    "priority": 3
+  },
+  "setting.html": {
+    "href": "setting.html",
+    "resources": [],
+    "refer": [],
+    "priority": 1
+  }
+}

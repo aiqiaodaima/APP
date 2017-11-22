@@ -1,0 +1,153 @@
+{
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "css/mui.css",
+      "js/mui.js",
+      "fonts/mui.ttf",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "images/cbd.jpg",
+      "images/yuantiao.jpg",
+      "images/muwu.jpg",
+      "images/shuijiao.jpg",
+      "images/logo.png",
+      "js/app.js"
+    ],
+    "refer": [
+      "PACS/index.html",
+      "pullrefresh_main.html",
+      "login.html",
+      "setting.html"
+    ],
+    "priority": 0
+  },
+  "PACS/index.html": {
+    "resources": [
+      "PACS/lib/cornerstone.js",
+      "PACS/lib/jquery.min.js",
+      "PACS/js/disableAllTools.js",
+      "PACS/studyList.json",
+      "PACS/js/imageViewer.js",
+      "PACS/lib/bootstrap.min.js",
+      "PACS/lib/cornerstoneTools.js",
+      "PACS/templates/viewport.html",
+      "PACS/lib/jquery-ui.min.js",
+      "PACS/js/setupButtons.js",
+      "PACS/templates/about.html",
+      "PACS/templates/help.html",
+      "PACS/lib/cornerstone.min.css",
+      "PACS/lib/cornerstoneWebImageLoader.js",
+      "PACS/js/setupViewport.js",
+      "PACS/js/about.js",
+      "PACS/js/loadTemplate.js",
+      "PACS/lib/bootstrap.min.css",
+      "PACS/js/loadStudy.js",
+      "PACS/js/setupViewportOverlays.js",
+      "PACS/js/forEachViewport.js",
+      "PACS/lib/dicomParser.js",
+      "PACS/studies/crstudy.json",
+      "PACS/lib/jquery-ui.min.css",
+      "PACS/js/displayThumbnail.js",
+      "PACS/css/cornerstoneDemo.css",
+      "PACS/lib/hammer.min.js",
+      "PACS/lib/cornerstoneMath.js",
+      "PACS/lib/cornerstoneWADOImageLoader.js",
+      "PACS/templates/studyViewer.html",
+      "PACS/js/help.js",
+      "PACS/js/cornerstoneDemo.js"
+    ],
+    "refer": []
+  },
+  "pullrefresh_main.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "pullrefresh_sub.html"
+    ],
+    "refer": [
+      "pullrefresh_sub.html"
+    ]
+  },
+  "login.html": {
+    "resources": [
+      "js/app.js",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "js/mui.enterfocus.js",
+      "images/sinaweibo.png",
+      "images/weixin.png",
+      "images/qq.png",
+      "fonts/mui.ttf",
+      "js/mui.view.js"
+    ],
+    "refer": [
+      "main.html",
+      "unlock.html",
+      "forget_password.html",
+      "reg.html"
+    ]
+  },
+  "main.html": {
+    "resources": [
+      "js/app.js",
+      "js/mui.min.js",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "unlock.html": {
+    "resources": [
+      "js/mui.locker.js",
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "js/app.js"
+    ],
+    "refer": [
+      "login.html",
+      "main.html"
+    ]
+  },
+  "forget_password.html": {
+    "resources": [
+      "css/style.css",
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "js/app.js"
+    ],
+    "refer": []
+  },
+  "reg.html": {
+    "resources": [
+      "css/style.css",
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "js/app.js"
+    ],
+    "refer": [
+      "login.html"
+    ]
+  },
+  "setting.html": {
+    "resources": [
+      "css/feedback.css",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "js/feedback.js",
+      "js/mui.view.js",
+      "fonts/mui.ttf",
+      "images/iconfont-tianjia.png",
+      "img/logo.png",
+      "images/logo.png"
+    ],
+    "refer": [
+      "guide.html"
+    ]
+  },
+  "guide.html": {
+    "resources": [
+      "js/mui.min.js"
+    ],
+    "refer": []
+  }
+}
