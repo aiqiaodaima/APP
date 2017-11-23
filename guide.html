@@ -8,7 +8,7 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="css/mui.min.css">
 		<style>
 			#close {
 				position: absolute;
@@ -181,12 +181,12 @@
 				<div class="mui-slider-item">
 					<div class="item-logo" style="background-color: #D74B28">
 						<a href="#">
-						MUI
+						粤融
 						</a>
 						<div class="animate guide-show">
-							<h2 class="animated bounceInDown">小巧高能</h2>
-							<li class="animated bounceInLeft">几十K的JS和CSS</li>
-							<li class="animated bounceInRight">上百种控件样式和模板</li>
+							<h2 class="animated bounceInDown">以诚信求发展</h2>
+							<li class="animated bounceInLeft">以专业做精品</li>
+							<li class="animated bounceInRight">努力成为领军企业</li>
 						</div>
 					</div>
 				</div>
@@ -194,12 +194,12 @@
 				<div class="mui-slider-item">
 					<div class="item-logo" style="background-color: #02C1ED;">
 						<a href="#">
-						MUI
+						粤融
 						</a>
 						<div id="tips-2" class="animate mui-hidden">
-							<h2 class="animated bounceInDown">原生UI</h2>
-							<li class="animated bounceInLeft">以iOS原生UI为基础</li>
-							<li class="animated bounceInRight">补充Android特有样式</li>
+							<h2 class="animated bounceInDown">态度</h2>
+							<li class="animated bounceInLeft">细节</li>
+							<li class="animated bounceInRight">目标</li>
 						</div>
 					</div>
 				</div>
@@ -207,12 +207,12 @@
 				<div class="mui-slider-item">
 					<div class="item-logo" style="background-color: #67C962;">
 						<a href="#">
-						MUI
+						粤融
 						</a>
 						<div id="tips-3" class="animate mui-hidden">
-							<h2 class="animated bounceInDown">流畅体验</h2>
-							<li class="animated bounceInLeft">下拉刷新、转场动画</li>
-							<li class="animated bounceInRight">整个世界都流畅了</li>
+							<h2 class="animated bounceInDown">态度决定一切</h2>
+							<li class="animated bounceInLeft">细节决定成败</li>
+							<li class="animated bounceInRight">目标决定方向</li>
 						</div>
 					</div>
 				</div>
@@ -220,10 +220,10 @@
 				<div class="mui-slider-item">
 					<div class="item-logo" style="background-color: #FCD208;">
 						<a href="#">
-						MUI
+						粤融
 						</a>
 						<div class="animate">
-							<button id='close' class="mui-btn mui-btn-warning mui-btn-outlined">立即体验</button>
+							<button id='close' class="mui-btn mui-btn-warning mui-btn-outlined">立即进入</button>
 						</div>
 					</div>
 				</div>
@@ -249,6 +249,17 @@
 				plus.storage.setItem("lauchFlag", "true");
 				plus.navigator.setFullscreen(false);
 				plus.webview.currentWebview().close();
+				mui.openWindow({
+					url: "homepage.html",
+					id: "homepage",
+					extras: {
+						mark: "gudie" //同样，这里也只是个标识，实际开发中并不用；
+					}
+				});
+				
+				
+				
+				
 			}, false);
 			//图片切换时，触发动画
 			document.querySelector('.mui-slider').addEventListener('slide', function(event) {
