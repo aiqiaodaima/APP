@@ -6,6 +6,37 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="css/mui.css"/>
 </head>
+<style>
+			html,
+			body {
+				background-color: #efeff4;
+			}
+			p {
+				text-indent: 22px;
+			}
+			span.mui-icon {
+				font-size: 14px;
+				color: #007aff;
+				margin-left: -15px;
+				padding-right: 10px;
+			}
+			.mui-off-canvas-left {
+				color: #fff;
+			}
+			.title {
+				margin: 35px 15px 10px;
+			}
+			.title+.content {
+				margin: 10px 15px 35px;
+				color: #bbb;
+				text-indent: 1em;
+				font-size: 14px;
+				line-height: 24px;
+			}
+			input {
+				color: #000;
+			}
+		</style>
 <body>
 	<!-- 主界面不动、菜单移动 -->
 	<!-- 侧滑导航根容器 -->
@@ -15,6 +46,23 @@
 	    <div class="mui-scroll-wrapper">
 	      <div class="mui-scroll">
 	        <!-- 菜单具体展示内容 -->
+	        <div class="title">侧滑导航</div>
+			<div class="content">
+				这是可拖动式侧滑菜单示例，你可以在这里放置任何内容；关闭侧滑菜单有多种方式：
+				1.在手机屏幕任意位置向左拖动(drag);	
+				2.点击本侧滑菜单页之外的任意位置; 
+				3.Android手机按back键;4.Android手机按menu键.
+										
+				<!--<p style="margin: 10px 15px;">
+					<button id="offCanvasHide" type="button" class="mui-btn mui-btn-danger mui-btn-block" style="padding: 5px 20px;">关闭侧滑菜单</button>
+				</p>-->
+			
+			</div>
+	        
+	        
+	        
+	        
+	        
 	        
 	      </div>
 	    </div>
@@ -105,13 +153,13 @@
 	            </a>
 	        </li>
 	        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-	            <a href="PACS/index.html" id="pacs">
+	            <a href="#" id="pacs">
 	                <span class="mui-icon mui-icon-image"><span class="mui-badge mui-badge-red">5</span></span>
 	                <div class="mui-media-body">我的影像</div>
 	            </a>
 	        </li>
 	        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-	            <a href="#">
+	            <a href="#" id="chat">
 	                <span class="mui-icon mui-icon mui-icon-videocam"></span>
 	                <div class="mui-media-body">远程视频</div>
 	            </a>
@@ -223,6 +271,11 @@
 	openweb('consultation','consultation.html','consultation');
 	//打开首页
 //	openweb('homepage.html','homepage.html','homepage');
+	//打开远程视频
+	openweb('chat','chat.html','chat');
+	
+
+
 	//联系我们
 	document.getElementById("phone").addEventListener('tap', function() {
 		if(mui.os.plus){
@@ -232,7 +285,13 @@
 		}
 		
 	});
-    </script>
+	
+	//侧边栏功能
+//	var offCanvasWrapper = mui('#offCanvasWrapper');
+// 	document.getElementById('offCanvasHide').addEventListener('tap', function() {
+//		offCanvasWrapper.offCanvas('close');
+//	});
+ 	</script>
 </body>
 </html>
 

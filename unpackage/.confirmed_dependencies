@@ -168,12 +168,25 @@
 		"refer": [
 			"login.html",
 			"setting.html",
-			"consultation.html"
+			"consultation.html",
+			"chat.html"
 		]
 	},
 	"consultation.html": {
 		"resources": [
 			"js/mui.pullToRefresh.js"
+		]
+	},
+	"chat.html": {
+		"resources": [
+			"js/mui.imageViewer.js",
+			"css/app.css",
+			"css/mui.imageviewer.css",
+			"js/arttmpl.js",
+			"images/Avatar.png",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
 		]
 	}
 }

@@ -423,13 +423,28 @@
 				"refer": [
 					"login.html",
 					"setting.html",
-					"consultation.html"
+					"consultation.html",
+					"chat.html"
 				],
 				"priority": 0
 			},
 			"consultation.html": {
 				"resources": [
 					"js/mui.pullToRefresh.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"chat.html": {
+				"resources": [
+					"js/mui.imageViewer.js",
+					"css/app.css",
+					"css/mui.imageviewer.css",
+					"js/arttmpl.js",
+					"images/Avatar.png",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css"
 				],
 				"refer": [],
 				"priority": 0
