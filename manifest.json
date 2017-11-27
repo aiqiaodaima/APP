@@ -256,7 +256,9 @@
 					"images/muwu.jpg",
 					"images/shuijiao.jpg",
 					"images/logo.png",
-					"js/app.js"
+					"js/app.js",
+					"fonts/mui-icons-extra.ttf",
+					"css/icons-extra.css"
 				],
 				"priority": 0,
 				"refer": [
@@ -264,7 +266,9 @@
 					"pullrefresh_main.html",
 					"login.html",
 					"setting.html",
-					"homepage.html"
+					"homepage.html",
+					"consultation.html",
+					"pacs.html"
 				]
 			},
 			"PACS/index.html": {
@@ -430,7 +434,9 @@
 			},
 			"consultation.html": {
 				"resources": [
-					"js/mui.pullToRefresh.js"
+					"js/mui.pullToRefresh.js",
+					"js/mui.min.js",
+					"css/mui.min.css"
 				],
 				"refer": [],
 				"priority": 0
@@ -445,6 +451,26 @@
 					"js/mui.min.js",
 					"fonts/mui.ttf",
 					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"pacs.html": {
+				"resources": [
+					"PACS/bootstrap.min.css",
+					"pacs/bootstrap.min.css",
+					"pacs/jquery.min.js",
+					"pacs/cornerstoneTools.js",
+					"pacs/exampleImageLoader.js",
+					"pacs/touch-emulator.js",
+					"pacs/bootstrap.min.js",
+					"pacs/cornerstoneMath.min.js",
+					"pacs/hammer.min.js",
+					"pacs/cornerstone.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/style.css",
+					"pacs/cornerstone.js"
 				],
 				"refer": [],
 				"priority": 0
