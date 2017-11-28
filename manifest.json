@@ -268,7 +268,12 @@
 					"setting.html",
 					"homepage.html",
 					"consultation.html",
-					"pacs.html"
+					"pacs.html",
+					"find.html",
+					"chat.html",
+					"information.html",
+					"endoscopy.html",
+					"report.html"
 				]
 			},
 			"PACS/index.html": {
@@ -450,7 +455,8 @@
 					"images/Avatar.png",
 					"js/mui.min.js",
 					"fonts/mui.ttf",
-					"css/mui.min.css"
+					"css/mui.min.css",
+					"css/mui.css"
 				],
 				"refer": [],
 				"priority": 0
@@ -471,6 +477,67 @@
 					"css/mui.min.css",
 					"css/style.css",
 					"pacs/cornerstone.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"home.html": {
+				"resources": [
+					"css/mui.min.css",
+					"js/vue.js",
+					"fonts/mui.ttf",
+					"js/mui.js"
+				],
+				"refer": [
+					"home-sub.html"
+				],
+				"priority": 0
+			},
+			"find.html": {
+				"resources": [
+					"home.html",
+					"js/vue.js",
+					"js/vue-mui.js",
+					"js/mui.min.js",
+					"css/style.css",
+					"js/app.js",
+					"fonts/mui.ttf",
+					"js/mui.js",
+					"css/mui.css",
+					"images/2.jpg",
+					"data/product_list_data.json",
+					"images/1.jpg",
+					"css/mui.min.css",
+					"images/3.jpg",
+					"images/4.jpg"
+				],
+				"refer": [
+					"detail.html"
+				],
+				"priority": 0
+			},
+			"report.html": {
+				"resources": [
+					"css/mui.min.css",
+					"css/style.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"endoscopy.html": {
+				"resources": [
+					"css/mui.min.css",
+					"css/style.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"detail.html": {
+				"resources": [
+					"data/data01.json",
+					"data/data02.json",
+					"data/data03.json",
+					"data/data04.json"
 				],
 				"refer": [],
 				"priority": 0

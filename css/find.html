@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="ui-page-login">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />		
+	</head>
+	<body id="app">
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">{{title}}</h1>
+		</header>
+		
+		<div class="mui-content"></div>
+		
+		
+		
+	</body>
+	<script src="js/mui.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue-mui.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el:"#app",
+			data:{
+				initIndex: 0, //[初始化参数]
+      			title: '首页',
+      			activeTab: 'home.html',
+      			tabbar: [
+      				{icon:'home',title:'首页',url: 'home.html'},
+//    				{icon:'phone',title:'电话',url: 'phone.html'},
+//    				{icon:'email',title:'邮件',url: 'email.html'},
+//    				{icon:'gear',title:'设置',url: 'gear.html'}
+      			],
+			},
+			ready: function() {
+      			mui.init();
+      			// Vue实例化对象
+      			var self = this;  
+      			// 初始化
+      			if(mui.os.plus){
+      				mui.plusReady(function() {
+	      				var curWs = plus.webview.currentWebview();
+	      				for(var i=0;i < self.tabbar.length;i++){
+	      					var subUrl = self.tabbar[i].url;
+	      					var subWs = plus.webview.create(subUrl, subUrl, self.subStyle);
+							if(i != self.initIndex){
+								subWs.hide();
+							}
+							curWs.append(subWs);
+	      				}	
+	      			})
+      			}else{
+      				createIframe('.mui-content',{
+						url: self.tabbar[self.initIndex].url,
+						style: self.subStyle
+					})
+      			}
+      		},
+      		methods: {
+				tab: function (index) {	
+					var targetTab = this.tabbar[index].url;
+					// 标题切换
+					this.title = this.tabbar[index].title;
+					// 子页内容切换
+					if(mui.os.plus){
+						// 显示目标webview
+						plus.webview.show(targetTab);
+						// 隐藏当前webview
+						plus.webview.hide(this.activeTab);
+						// 更改当前活跃的选项卡
+						this.activeTab = targetTab;
+					}else{
+						// 创建iframe代替子页面
+						createIframe('.mui-content',{
+							url: targetTab,
+							style: this.subStyle
+						})
+					}
+				}
+      		}
+		})
+	</script>
+</html>

@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/mui.css"/>
 		<link rel="stylesheet" type="text/css" href="css/app.css"/>
 		<link rel="stylesheet" type="text/css" href="css/mui.imageviewer.css"/>
 		<style>
@@ -74,12 +74,15 @@
 			.footer-center .input-sound {
 				background-color: #eee;
 			}
-			.mui-content {
+			/*.mui-content {
 				height: 100%;
 				padding: 44px 0px 50px 0px;
-				overflow: auto;
+				/*top: 44px;
+				bottom: 50px;*/
+				/*position: absolute;*/
+				/*overflow: auto;
 				background-color: #eaeaea;
-			}
+			}*/
 			#msg-list {
 				height: 100%;
 				overflow: auto;
@@ -328,7 +331,7 @@
 				</div>
 			<% } %>
 		</script>
-		<div class="mui-content">
+		<div class="mui-content mui-fullscreen">
 			<div id='msg-list'>
 			</div>
 		</div>
