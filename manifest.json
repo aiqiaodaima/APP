@@ -258,7 +258,11 @@
 					"images/logo.png",
 					"js/app.js",
 					"fonts/mui-icons-extra.ttf",
-					"css/icons-extra.css"
+					"css/icons-extra.css",
+					"images/2.jpg",
+					"images/1.jpg",
+					"images/3.jpg",
+					"images/4.jpg"
 				],
 				"priority": 0,
 				"refer": [
